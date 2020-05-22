@@ -1,6 +1,6 @@
 # SCSS Project Starter
 
-This starter contains a folder structure that i normally use when starting a new project. This is not a framework, but more of a style guide. The architecture used is a variation of the 7-1 pattern (https://sass-guidelin.es/#architecture), with the BEM (block__element--modifier) methodology used for styling (http://getbem.com/). 
+This starter contains a folder structure that i normally use when starting a new project. This is not a framework, but more of a style guide. The architecture used is a variation of the 7-1 pattern (https://sass-guidelin.es/#architecture), with the BEM (block__element--modifier) methodology used for styling (http://getbem.com/). I have also included some generic styles for a few common elements (block panel, button, page, etc.), feel free to remove / edit these.
 
 
 ## Getting Started
@@ -10,58 +10,72 @@ Just copy the styles folder in your project.
 
 ### Folder Structure
 
-* The pattern consits of 7 folders with partials and one main file where all are imported;
-* The 7 folders are: abstracts, base, components, layout, pages, themes and vendors;
 
 ```
 styles/
 |
 |– abstracts/
-|   |– _variables.scss      # Sass Variables
-|   |– _functions.scss      # Sass Functions
-|   |– _mixins.scss         # Sass Mixins
-|   |– _placeholders.scss   # Sass Placeholders
-|   |– _extends.scss        # Sass Extends
-|   |– _media.scss          # Media breakpoints
+|   |- variables/
+|       | - _colors.scss        # Color Variables
+|       | - _media.scss         # Media Breakpoints Variables
+|       | - _typography.scss    # Typography Variables
+|   |– _functions.scss          # Sass Functions
+|   |– _mixins.scss             # Sass Mixins
+|   |– _placeholders.scss       # Sass Placeholders
+|   |– _extends.scss            # Sass Extends
+|   …                           # Etc.
 |
 |– base/
-|   |– _reset.scss          # Reset/normalize
-|   |– _typography.scss     # Typography rules
-|   …                       # Etc.
+|   |– _debugger.scss           # CSS Node Depth Debugger
+|   |– _fonts.scss              # Fonts / Font Faces
+|   |– _icons.scss              # Icon Imports / Font Face
+|   |– _reset.scss              # Reset/normalize
+|   |– _typography.scss         # Typography rules
+|   …                           # Etc.
 |
 |– components/
-|   |– _buttons.scss        # Buttons
-|   |– _carousel.scss       # Carousel
-|   |– _cover.scss          # Cover
-|   |– _dropdown.scss       # Dropdown
-|   …                       # Etc.
+|   |- form/
+|       | - _form.scss          # Form Layout
+|       | - _input-field.scss   # Form Input Field
+|       | - _textarea.scss      # Form Textarea
+|       | - _checkbox.scss      # Form Checkbox
+|       | - _radio-button.scss  # Form Radio Button
+|   |– _buttons.scss            # Buttons
+|   |– _carousel.scss           # Carousel
+|   |– _cover.scss              # Cover
+|   |– _dropdown.scss           # Dropdown
+|   …                           # Etc.
 |
 |– layout/
-|   |– _navigation.scss     # Navigation
-|   |– _grid.scss           # Grid system
-|   |– _header.scss         # Header
-|   |– _footer.scss         # Footer
-|   |– _sidebar.scss        # Sidebar
-|   |– _forms.scss          # Forms
-|   …                       # Etc.
+|   |– _navigation.scss         # Navigation
+|   |– _grid.scss               # Grid system
+|   |– _header.scss             # Header
+|   |– _footer.scss             # Footer
+|   |– _sidebar.scss            # Sidebar
+|   |– _forms.scss              # Forms
+|   …                           # Etc.
 |
 |– pages/
-|   |– _home.scss           # Home specific styles
-|   |– _contact.scss        # Contact specific styles
-|   …                       # Etc.
+|   |– _home.scss               # Home specific styles
+|   |– _contact.scss            # Contact specific styles
+|   …                           # Etc.
 |
 |– themes/
-|   |– _theme.scss          # Default theme
-|   |– _admin.scss          # Admin theme
-|   …                       # Etc.
+|   |– _theme.scss              # Default theme
+|   |– _admin.scss              # Admin theme
+|   …                           # Etc.
+|
+|– utility/
+|   |– _modifiers.scss          # Bootstrap
+|   …                           # Etc.
 |
 |– vendors/
-|   |– _bootstrap.scss      # Bootstrap
-|   |– _jquery-ui.scss      # jQuery UI
-|   …                       # Etc.
+|   |– _bootstrap.scss          # Bootstrap
+|   |– _jquery-ui.scss          # jQuery UI
+|   …                           # Etc.
 |
-|- _shame.scss              # Shame file
-|– main.scss                # Main Sass file
+|- _shame.scss                  # Shame file
+|– main.scss                    # Main Sass file
 ```
 
 
