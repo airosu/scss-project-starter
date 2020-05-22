@@ -1,0 +1,44 @@
+// ============================================================
+// CSS Debugger
+// ============================================================
+
+/*
+    Uncomment one of the blocks below to increase visibility on all elements / depths of nodes
+*/
+
+
+
+// ------------------------------------------------------------
+
+
+
+// --- Option A
+
+// * { background-color: rgba(255,0,0,.2); }
+// * * { background-color: rgba(0,255,0,.2); }
+// * * * { background-color: rgba(0,0,255,.2); }
+// * * * * { background-color: rgba(255,0,255,.2); }
+// * * * * * { background-color: rgba(0,255,255,.2); }
+// * * * * * * { background-color: rgba(255,255,0,.2); }
+// * * * * * * * { background-color: rgba(255,0,0,.2); }
+// * * * * * * * * { background-color: rgba(0,255,0,.2); }
+// * * * * * * * * * { background-color: rgba(0,0,255,.2); }
+
+
+
+
+// --- Option B
+
+// html * {
+//     background: rgba(255, 0, 0, .1);
+//     box-shadow: 0 0 0 1px salmon;
+// }
+
+
+
+
+// Or use indivitually, on single elements (note: border will change layout, unlike outline)
+/*
+    background-color: aliceblue;
+    outline: 1px solid pink;
+*/

@@ -1,0 +1,41 @@
+// ============================================================
+// Typography Rules
+// ============================================================
+
+
+body {
+    color: $color__text;
+    font: {
+        family: $font-family__base;
+        size: 1.6rem;
+    }
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family__primary;
+    font-weight: $font-weight__bold;
+    color: $color__text;
+}
+
+
+
+a {
+    color: $color__link;
+    text-decoration: none;
+
+    &:hover {
+        color: $color__brand;
+    }
+
+    @media screen and (max-width: $media__l) {
+        &:hover {
+            color: $color__link;
+        }
+        &:active {
+            color: $color__brand;
+        }
+    }
+}
+

@@ -1,0 +1,112 @@
+// ============================================================
+// Page (body)
+// ============================================================
+
+
+$header-height: 8rem;
+
+
+
+
+
+// ------------------------------------------------------------
+
+
+.page {
+    &__header {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        height: $header-height;
+    }
+
+    &__wrapper {
+        margin-top: $header-height;
+        min-height: 100vh;
+    }
+
+    &__aside {}
+
+    &__main {}
+
+    &__footer {
+        margin-bottom: 6rem;
+    }
+
+
+    &__container {
+        position: relative;
+        max-width: 120rem;
+        width: 90%;
+        margin: 0 auto;
+
+        &--large {
+            max-width: 144rem;
+        }
+        &--small {
+            max-width: 90rem;
+        }
+    }
+
+    &__section {
+        margin-bottom: 13rem;
+    }
+}
+
+
+
+
+
+
+//
+// Tablet
+// ______________________________
+
+@media screen and (max-width: $media__l) {
+    
+    .page {
+        &__container {
+            width: 90%;
+        }
+
+        &__section {
+            margin-bottom: 9.5rem;
+
+            &--tall {
+                margin-bottom: 17rem;
+            }
+        }
+        &__section-sidetext {
+            display: none;
+        }
+
+        &__subscribe-area {
+            width: 90%;
+        }
+    }
+}
+
+
+
+//
+// Mobile
+// ______________________________
+
+@media screen and (max-width: $media__s) {
+
+    .page {
+        &__container {
+            &--large {
+                width: 100%;
+            }
+        }
+
+        &__section {
+            margin-top: 3rem;
+
+            &--short {
+                margin-bottom: 3.5rem;
+            }
+        }
+    }
+}

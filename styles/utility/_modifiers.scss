@@ -1,0 +1,171 @@
+// ============================================================
+// Modifiers
+// ============================================================
+
+/*
+    To be used in wrappers / containers in which blocks are placed,
+    not on the blocks themselves. Always import last in main.scss
+*/
+
+
+
+
+
+
+// --- General
+
+[class*="--hidden"] {
+    display: none !important;
+}
+
+[class*="--full-width"] {
+    width: 100%;
+}
+
+[class*="--relative"] {
+    position: relative;
+}
+
+
+
+// --- Positioning
+
+[class*="--justify-center"] {
+    display: flex;
+    justify-content: center;
+}
+[class*="--justify-right"] {
+    display: flex;
+    justify-content: flex-end;
+}
+[class*="--justify-left"] {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+[class*="--align-center"] {
+    display: flex;
+    align-items: center;
+}
+[class*="--align-top"] {
+    display: flex;
+    align-items: flex-start;
+}
+[class*="--align-bottom"] {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+[class*="--place-center"] {
+    display: grid;
+    place-content: center;
+}
+
+
+
+
+// --- Padding
+
+[class*="--padding-0"] {
+    padding: 0;
+}
+[class*="--padding-top-0"] {
+    padding-top: 0;
+}
+[class*="--padding-right-0"] {
+    padding-right: 0;
+}
+[class*="--padding-bottom-0"] {
+    padding-bottom: 0;
+}
+[class*="--padding-left-0"] {
+    padding-left: 0;
+}
+
+
+
+
+// --- Margin
+
+[class*="--margin-0"] {
+    margin: 0;
+}
+[class*="--margin-top-0"] {
+    margin-top: 0;
+}
+[class*="--margin-right-0"] {
+    margin-right: 0;
+}
+[class*="--margin-bottom-0"] {
+    margin-bottom: 0;
+}
+[class*="--margin-left-0"] {
+    margin-left: 0;
+}
+
+
+
+// --- Border
+
+[class*="--border-none"] {
+    border: none;
+}
+[class*="--border-top-none"] {
+    border-top: none;
+}
+[class*="--border-right-none"] {
+    border-right: none;
+}
+[class*="--border-bottom-none"] {
+    border-bottom: none;
+}
+[class*="--border-left-none"] {
+    border-left: none;
+}
+
+
+// --- Box Shadow
+
+[class*="--box-shadow-none"] {
+    box-shadow: none;
+}
+
+
+
+
+//
+// Tablet
+// ______________________________
+
+@media screen and (max-width: $media__l) {
+
+    [class*="--hidden-tablet"] {
+        display: none !important;
+    }
+
+    [class*="--full-tablet"] {
+        width: 100%;
+    }
+}
+
+
+
+
+
+//
+// Mobile
+// ______________________________
+
+@media screen and (max-width: $media__m) {
+
+    [class*="--hidden-mobile"] {
+        display: none !important;
+    }
+
+    [class*="--full-mobile"] {
+        width: 100%;
+    }
+}
+
