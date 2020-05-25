@@ -12,7 +12,8 @@
 
 
 
-// --- General
+// General
+// ------------------------------------------------------------
 
 [class*="--hidden"] {
     display: none !important;
@@ -28,8 +29,19 @@
 
 
 
-// --- Positioning
 
+
+// Positioning
+// ------------------------------------------------------------
+
+// --- Text
+[class*="--text-centered"] {
+    display: flex;
+    justify-content: center;
+}
+
+
+// --- Flex Justify
 [class*="--justify-center"] {
     display: flex;
     justify-content: center;
@@ -44,6 +56,7 @@
 }
 
 
+// --- Flex Align
 [class*="--align-center"] {
     display: flex;
     align-items: center;
@@ -58,6 +71,7 @@
 }
 
 
+// --- Grid
 [class*="--place-center"] {
     display: grid;
     place-content: center;
@@ -66,7 +80,9 @@
 
 
 
-// --- Padding
+
+// Padding
+// ------------------------------------------------------------
 
 [class*="--padding-0"] {
     padding: 0;
@@ -87,7 +103,9 @@
 
 
 
-// --- Margin
+
+// Margin
+// ------------------------------------------------------------
 
 [class*="--margin-0"] {
     margin: 0;
@@ -107,7 +125,10 @@
 
 
 
-// --- Border
+
+
+// Border
+// ------------------------------------------------------------
 
 [class*="--border-none"] {
     border: none;
@@ -126,11 +147,17 @@
 }
 
 
-// --- Box Shadow
+
+
+// Box Shadow
+// ------------------------------------------------------------
 
 [class*="--box-shadow-none"] {
     box-shadow: none;
 }
+
+
+
 
 
 
