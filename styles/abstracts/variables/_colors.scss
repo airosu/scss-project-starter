@@ -3,12 +3,42 @@
 // ============================================================
 
 
-$color__white: #fff;
-$color__black: #000;
+
+// Main / Brand Colors
+// -------------------------------------------------------------
+
+$color__brand--light:        '';
+$color__brand:               darkcyan;
+$color__brand--dark:         '';
 
 
-$color__brand: darkcyan;
 
-$color__text: #333;
-$color__link: #555;
+
+
+// Grays
+// -------------------------------------------------------------
+
+$color__white:               #fff;
+
+$color__gray--ligher:        #e9e9e9;
+$color__gray--light:         #e0e0e0;
+$color__gray:                #686868;
+$color__gray--dark:          '';
+$color__gray__darker:        #333;
+
+$color__black:               #000;
+
+
+
+
+
+
+
+// Other
+// -------------------------------------------------------------
+
+$color__blue:                #5da8ef;
+$color__blue--dark:          #1576d1;
+
+
 

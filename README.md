@@ -84,8 +84,6 @@ and it consists of putting all CSS declarations, hacks and things we are not pro
 * The main.scss file will only consist of imports and comments; the contents of this file will be compiled into a main.css that will be added in the project;
 * When importing partials in the main.scss file, it is recommended to keep the order of the folders:
 
-![Main_scss](/main_scss.png)
-
 
 ## Utility Last
 

@@ -3,7 +3,18 @@
 // ============================================================
 
 
-$header-height: 8rem;
+$height__header:                 10rem;
+$height__footer:                 5.2rem;
+
+
+$container-width--fixed-small:   90rem;
+$container-width--fixed-medium:  120rem;
+$container-width--fixed-large:   144rem;
+
+
+$section-margin--small:          9rem;
+$section-margin:                 14rem;
+$section-margin--large:          17rem;
 
 
 
@@ -13,45 +24,63 @@ $header-height: 8rem;
 
 
 .page {
+    &__container {
+        position: relative;
+        width: 75%;
+        margin: 0 auto;
+
+        &--small {
+            max-width: $container-width--fixed-small;
+            width: 90%;
+        }
+        &--medium {
+            max-width: $container-width--fixed-medium;
+            width: 90%;
+        }
+        &--large {
+            max-width: $container-width--fixed-large;
+            width: 90%;
+        }
+    }
+
+    &__section {
+        margin-bottom: $section-margin;
+
+        &--small {
+            margin-bottom: $section-margin--small;
+        }
+        &__large {
+            margin-bottom: $section-margin--large;
+        }
+    }
+
+    &__wrapper {
+        padding-top: $height__header;
+        min-height: 100vh;
+    }
+
+
+
     &__header {
         position: fixed;
         z-index: 100;
         width: 100%;
-        height: $header-height;
-    }
-
-    &__wrapper {
-        margin-top: $header-height;
-        min-height: 100vh;
+        height: $height__header;
     }
 
     &__aside {}
 
     &__main {}
 
-    &__footer {
-        margin-bottom: 6rem;
-    }
+    &__footer {}
 
 
-    &__container {
-        position: relative;
-        max-width: 120rem;
-        width: 90%;
-        margin: 0 auto;
 
-        &--large {
-            max-width: 144rem;
-        }
-        &--small {
-            max-width: 90rem;
-        }
-    }
-
-    &__section {
-        margin-bottom: 13rem;
+    &__heading {
+        margin-bottom: 3.5rem;
     }
 }
+
 
 
 
@@ -68,21 +97,6 @@ $header-height: 8rem;
         &__container {
             width: 90%;
         }
-
-        &__section {
-            margin-bottom: 9.5rem;
-
-            &--tall {
-                margin-bottom: 17rem;
-            }
-        }
-        &__section-sidetext {
-            display: none;
-        }
-
-        &__subscribe-area {
-            width: 90%;
-        }
     }
 }
 
@@ -96,17 +110,8 @@ $header-height: 8rem;
 
     .page {
         &__container {
-            &--large {
-                width: 100%;
-            }
-        }
-
-        &__section {
-            margin-top: 3rem;
-
-            &--short {
-                margin-bottom: 3.5rem;
-            }
+            width: 90%;
         }
     }
 }
+

@@ -4,12 +4,33 @@
 
 
 
+
+// Font Colors
+// -------------------------------------------------------------
+
+$color__text:            $color__gray__darker;
+
+$color__link:            $color__gray__darker;
+$color__link--hover:     $color__brand;
+$color__link--active:    $color__brand;
+
+
+
+
+// Font Families
+// -------------------------------------------------------------
+
 $font-family__base: 'Open Sans', sans-serif;
 $font-family__primary: sans-serif;
 $font-family__secondary: sans-serif;
 $font-family__tertiary: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 
+
+
+
+// Font Weights
+// -------------------------------------------------------------
 
 $font-weight__lightest:         100;
 $font-weight__lighter:          200;
@@ -20,5 +41,4 @@ $font-weight__semibold--heavy:  600;
 $font-weight__bold:             700;
 $font-weight__bolder:           800;
 $font-weight__boldest:          900;
-
 
