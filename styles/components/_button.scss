@@ -3,11 +3,194 @@
 // ============================================================
 
 
+// --- Config
+$lighten-value:   5.7%;
+$darken-value:    10%;
+$transition-time: 0.2s;
+
+
+
+
+// --- Base Colors
+$color__button-background:             $color__gray--ligher;
+$color__button-foreground:             $color__text;
+$color__button-border:                 $color__text;
+
+
+
+// --- Primary Colors
+$color__button-background--primary:          $color__white;
+$color__button-foreground--primary:          $color__brand;
+$color__button-border--primary:              $color__brand;
+
+$color__button-background--primary-inverse:    $color__brand;
+$color__button-foreground--primary-inverse:    $color__white;
+$color__button-border--primary-inverse:        $color__brand;
+
+
+
+// --- Secondary Colors
+$color__button-background--secondary:  $color__white;
+$color__button-foreground--secondary:  $color__text;
+$color__button-border--secondary:      $color__text;
+
+$color__button-background--secondary-inverse:  $color__text;
+$color__button-foreground--secondary-inverse:  $color__white;
+$color__button-border--secondary-inverse:      $color__text;
+
+
+
+/// --- Tertiary Colors
+$color__button-background--tertiary:   $color__white;
+$color__button-foreground--tertiary:   $color__text;
+$color__button-border--tertiary:       $color__text;
+
+$color__button-background--tertiary-inverse:   $color__text;
+$color__button-foreground--tertiary-inverse:   $color__white;
+$color__button-border--tertiary-inverse:       $color__text;
 
 
 
 // ------------------------------------------------------------
 
+
+
+.button {
+    display: inline-block;
+    cursor: pointer;
+    -webkit-appearance: none;
+    transition: color $transition-time,
+        background-color $transition-time,
+        border-color $transition-time,
+        box-shadow $transition-time;
+    text: {
+        align: center;
+        decoration: none;
+        transform: uppercase;
+    }
+    letter-spacing: 0.14rem;
+    width: auto;
+    height: 4.9rem;
+    padding: 0 3.4rem;
+    margin: 0;
+
+    border: 0.2rem solid;
+    border-color: $color__button-border;
+    border-radius: 4rem;
+
+    font: {
+        size: 1.4rem;
+        weight: $font-weight__bold;
+        family: $font-family__primary;
+    }
+    line-height: 4.5rem;  // calc(height - border top - border bot);
+    color: $color__button-foreground;
+    background: $color__button-background;
+
+
+    &__icon {
+        margin-left: 1rem;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+
+
+    &--small {
+        padding: 0 1.4rem;
+        height: 2.8rem;
+        line-height: 2.1rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.12rem;
+    }
+
+    &--medium {
+        height: 3.8rem;
+        padding: 0 1.7rem;
+        line-height: 3.4rem;
+        font-size: 1.3rem;
+        letter-spacing: 0.13rem;
+    }
+
+
+    &--large {
+        max-width: 33.2rem;
+        width: 100%;
+    }
+
+    &--block {
+        display: block;
+        width: 100%;
+    }
+
+
+
+    &--primary {
+        color:        $color__button-foreground--primary;
+        background:   $color__button-background--primary;
+        border-color: $color__button-border--primary;
+
+        &:hover,
+        &.button--inverse {
+            color:        $color__button-foreground--primary-inverse;
+            background:   $color__button-background--primary-inverse;
+            border-color: $color__button-border--primary-inverse;
+        }
+
+        &.button--inverse {
+            &:hover {
+                color:        lighten($color__button-foreground--primary-inverse, $lighten-value);
+                background:   lighten($color__button-background--primary-inverse, $lighten-value);
+                border-color: lighten($color__button-border--primary-inverse, $lighten-value);
+            }
+        }
+    }
+
+    &--secondary {
+        color:        $color__button-foreground--secondary;
+        background:   $color__button-background--secondary;
+        border-color: $color__button-border--secondary;
+
+        &:hover,
+        &.button--inverse {
+            color:        $color__button-foreground--secondary-inverse;
+            background:   $color__button-background--secondary-inverse;
+            border-color: $color__button-border--secondary-inverse;
+        }
+
+        &.button--inverse {
+            &:hover {
+                color:        lighten($color__button-foreground--secondary-inverse, $lighten-value);
+                background:   lighten($color__button-background--secondary-inverse, $lighten-value);
+                border-color: lighten($color__button-border--secondary-inverse, $lighten-value);
+            }
+        }
+    }
+
+
+    &--tertiary {
+        color:        $color__button-foreground--tertiary;
+        background:   $color__button-background--tertiary;
+        border-color: $color__button-border--tertiary;
+
+        &:hover,
+        &.button--inverse {
+            color:        $color__button-foreground--tertiary-inverse;
+            background:   $color__button-background--tertiary-inverse;
+            border-color: $color__button-border--tertiary-inverse;
+        }
+
+        &.button--inverse {
+            &:hover {
+                color:        lighten($color__button-foreground--tertiary-inverse, $lighten-value);
+                background:   lighten($color__button-background--tertiary-inverse, $lighten-value);
+                border-color: lighten($color__button-border--tertiary-inverse, $lighten-value);
+            }
+        }
+    }
+}
 
 
 
