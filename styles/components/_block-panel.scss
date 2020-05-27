@@ -3,11 +3,22 @@
 // ============================================================
 
 
+$color__block-panel-border: $color__gray--light;
 
 
 
 // ------------------------------------------------------------
 
+
+
+.block-panel {
+    padding: $default-padding;
+    border: 0.1rem solid $color__block-panel-border;
+    border-radius: 0.6rem;
+    box-shadow: $box-shadow;
+    transition: box-shadow 0.3s;
+    cursor: default;
+}
 
 
 
