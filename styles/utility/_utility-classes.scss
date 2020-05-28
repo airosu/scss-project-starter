@@ -1,5 +1,5 @@
 // ============================================================
-// Modifiers
+// Utility Classes
 // ============================================================
 
 
@@ -9,15 +9,13 @@
 // General
 // ------------------------------------------------------------
 
-[class*="--hidden"] {
+.hidden {
     display: none !important;
 }
-
-[class*="--full-width"] {
+.full-width {
     width: 100%;
 }
-
-[class*="--relative"] {
+.relative {
     position: relative;
 }
 
@@ -29,43 +27,43 @@
 // ------------------------------------------------------------
 
 // --- Text
-[class*="--text-centered"] {
+.text-centered {
     text-align: center;
 }
 
 
 // --- Flex Justify
-[class*="--justify-center"] {
+.justify-center {
     display: flex;
     justify-content: center;
 }
-[class*="--justify-right"] {
+.justify-right {
     display: flex;
     justify-content: flex-end;
 }
-[class*="--justify-left"] {
+.justify-left {
     display: flex;
     justify-content: flex-start;
 }
 
 
 // --- Flex Align
-[class*="--align-center"] {
+.align-center {
     display: flex;
     align-items: center;
 }
-[class*="--align-top"] {
+.align-top {
     display: flex;
     align-items: flex-start;
 }
-[class*="--align-bottom"] {
+.align-bottom {
     display: flex;
     align-items: flex-end;
 }
 
 
 // --- Grid
-[class*="--place-center"] {
+.place-center {
     display: grid;
     place-content: center;
 }
@@ -77,20 +75,34 @@
 // Padding
 // ------------------------------------------------------------
 
-[class*="--padding-0"] {
+.no-padding {
     padding: 0;
 }
-[class*="--padding-top-0"] {
+.no-padding-top {
     padding-top: 0;
 }
-[class*="--padding-right-0"] {
+.no-padding-right {
     padding-right: 0;
 }
-[class*="--padding-bottom-0"] {
+.no-padding-bottom {
     padding-bottom: 0;
 }
-[class*="--padding-left-0"] {
+.no-padding-left {
     padding-left: 0;
+}
+.no-padding-top-bottom,
+.no-padding-bottom-top {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.no-padding-left-right,
+.no-padding-right-left {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.default-padding {
+    padding: $default-padding;
 }
 
 
@@ -100,20 +112,30 @@
 // Margin
 // ------------------------------------------------------------
 
-[class*="--margin-0"] {
+.no-margin {
     margin: 0;
 }
-[class*="--margin-top-0"] {
+.no-margin-top {
     margin-top: 0;
 }
-[class*="--margin-right-0"] {
+.no-margin-right {
     margin-right: 0;
 }
-[class*="--margin-bottom-0"] {
+.no-margin-bottom {
     margin-bottom: 0;
 }
-[class*="--margin-left-0"] {
+.no-margin-left {
     margin-left: 0;
+}
+.no-margin-top-bottom,
+.no-margin-bottom-top {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.no-margin-left-right,
+.no-margin-right-left {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 
@@ -123,20 +145,30 @@
 // Border
 // ------------------------------------------------------------
 
-[class*="--border-none"] {
+.no-border {
     border: none;
 }
-[class*="--border-top-none"] {
+.no-border-top {
     border-top: none;
 }
-[class*="--border-right-none"] {
+.no-border-right {
     border-right: none;
 }
-[class*="--border-bottom-none"] {
+.no-border-bottom {
     border-bottom: none;
 }
-[class*="--border-left-none"] {
+.no-border-left {
     border-left: none;
+}
+.no-border-top-bottom,
+.no-border-bottom-top {
+    border-top: none;
+    border-bottom: none;
+}
+.no-border-left-right,
+.no-border-right-left {
+    border-left: none;
+    border-right: none;
 }
 
 
@@ -146,9 +178,38 @@
 // Box Shadow
 // ------------------------------------------------------------
 
-[class*="--box-shadow-none"] {
+.no-box-shadow {
     box-shadow: none;
 }
+
+
+
+
+
+// Typography
+// ------------------------------------------------------------
+
+
+.semibold-light {
+    font-weight: $font-weight__semibold--light;
+}
+.semibold-heavy {
+    font-weight: $font-weight__semibold--heavy;
+}
+.bold {
+    font-weight: $font-weight__bold;
+}
+.italic {
+    font-style: italic;
+}
+.underline {
+    text-decoration: underline;
+}
+
+
+
+
+
 
 
 
@@ -160,11 +221,10 @@
 
 @media screen and (max-width: $media__l) {
 
-    [class*="--hidden-tablet"] {
+    .hidden-tablet {
         display: none !important;
     }
-
-    [class*="--full-tablet"] {
+    .full-width-tablet {
         width: 100%;
     }
 }
@@ -179,12 +239,12 @@
 
 @media screen and (max-width: $media__m) {
 
-    [class*="--hidden-mobile"] {
+    .hidden-mobile {
         display: none !important;
     }
-
-    [class*="--full-mobile"] {
+    .full-width-mobile {
         width: 100%;
     }
 }
+
 
