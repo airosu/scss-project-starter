@@ -168,7 +168,6 @@ $color__button-border--tertiary-inverse:       $color__text;
         }
     }
 
-
     &--tertiary {
         color:        $color__button-foreground--tertiary;
         background:   $color__button-background--tertiary;
@@ -190,6 +189,75 @@ $color__button-border--tertiary-inverse:       $color__text;
         }
     }
 }
+
+
+
+
+
+
+//
+// Tablet
+// ______________________________
+
+@media screen and (max-width: $media__l) {
+
+    .button {
+
+        &--primary {
+            &:hover {
+                color:        $color__button-foreground--primary;
+                background:   $color__button-background--primary;
+                border-color: $color__button-border--primary;
+            }
+            &.button--inverse {
+                &:hover {
+                    color:        $color__button-foreground--primary-inverse;
+                    background:   $color__button-background--primary-inverse;
+                    border-color: $color__button-border--primary-inverse;
+                }
+            }
+        }
+
+        &--secondary {
+            &:hover {
+                color:        $color__button-foreground--secondary;
+                background:   $color__button-background--secondary;
+                border-color: $color__button-border--secondary;
+            }
+            &.button--inverse {
+                &:hover {
+                    color:        $color__button-foreground--secondary-inverse;
+                    background:   $color__button-background--secondary-inverse;
+                    border-color: $color__button-border--secondary-inverse;
+                }
+            }
+        }
+
+        &--tertiary {
+            &:hover {
+                color:        $color__button-foreground--tertiary;
+                background:   $color__button-background--tertiary;
+                border-color: $color__button-border--tertiary;
+            }
+            &.button--inverse {
+                &:hover {
+                    color:        $color__button-foreground--tertiary-inverse;
+                    background:   $color__button-background--tertiary-inverse;
+                    border-color: $color__button-border--tertiary-inverse;
+                }
+            }
+        }
+    }
+}
+
+
+
+//
+// Mobile
+// ______________________________
+
+@media screen and (max-width: $media__m) {}
+
 
 
 
